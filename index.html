@@ -1,390 +1,384 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#090909">
-    <meta name="description" content="Shaiel Torres | Personal Trainer & Entrepreneur. Reset Metabólico, transformación física, entrenamiento y oportunidades de negocio.">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="Shaiel Torres | Fitness & Entrepreneurship. Transformación física, Reset Metabólico y oportunidades de negocio.">
 
-    <meta property="og:title" content="Shaiel Torres | Personal Brand">
-    <meta property="og:description" content="Fitness, transformación física y desarrollo empresarial.">
-    <meta property="og:type" content="website">
+<meta property="og:title" content="Shaiel Torres | Fitness & Entrepreneurship">
+<meta property="og:description" content="Build a better you. Build your future.">
 
-    <title>Shaiel Torres | Personal Brand</title>
+<title>Shaiel Torres | Personal Brand</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #090909;
+    --surface: #151515;
+    --surface-light: #1d1d1d;
+    --white: #F5F4F0;
+    --muted: #999999;
+    --gold: #C5A46D;
+    --gold-light: #D9BD91;
+    --border: #303030;
+}
 
-    <style>
-        :root {
-            --bg: #090909;
-            --surface: #141414;
-            --surface-light: #1c1c1c;
-            --white: #F5F4F0;
-            --muted: #999999;
-            --gold: #C5A46D;
-            --gold-light: #D9BD91;
-            --border: #303030;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        html {
-            scroll-behavior: smooth;
-        }
+body {
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            #252525 0%,
+            transparent 45%
+        ),
+        var(--bg);
+    color: var(--white);
+    font-family: 'DM Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
 
-        body {
-            background:
-                radial-gradient(
-                    ellipse at 50% 0%,
-                    #252525 0%,
-                    transparent 45%
-                ),
-                var(--bg);
-            color: var(--white);
-            font-family: 'DM Sans', Arial, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            min-height: 100vh;
-        }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 38px 20px 30px;
+}
 
-        .container {
-            width: 100%;
-            max-width: 510px;
-            padding: 35px 20px 30px;
-            margin: auto;
-        }
+/* HEADER */
 
-        /* HEADER */
+.top-label {
+    text-align: center;
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
 
-        .top-label {
-            text-align: center;
-            color: var(--gold);
-            font-size: 9px;
-            font-weight: 600;
-            letter-spacing: 4px;
-            margin-bottom: 30px;
-        }
+.hero {
+    text-align: center;
+    padding: 10px 10px 38px;
+}
 
-        .hero {
-            text-align: center;
-            padding: 10px 10px 35px;
-        }
-
-        .profile-image {
-            display: block;
-            width: 135px;
-            height: 135px;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
-            border: 2px solid var(--gold);
-            margin: 0 auto 27px;
-            box-shadow:
-                0 0 0 7px rgba(197,164,109,0.07),
+.profile-image {
+    display: block;
+    width: 138px;
+    height: 138px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    margin: 0 auto 27px;
+    box-shadow: 0 0 0 7px rgba(197,164,109,0.07),
                 0 15px 40px rgba(0,0,0,0.35);
-        }
+}
 
-        h1 {
-            font-family: 'Manrope', sans-serif;
-            font-size: clamp(28px, 8vw, 36px);
-            font-weight: 800;
-            letter-spacing: 3px;
-            line-height: 1.3;
-        }
+h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(28px, 8vw, 36px);
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.3;
+}
 
-        .profession {
-            margin-top: 12px;
-            color: var(--gold);
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 2.5px;
-        }
+.profession {
+    margin-top: 12px;
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
 
-        .intro {
-            max-width: 370px;
-            margin: 22px auto 0;
-            color: #AAAAAA;
-            font-size: 13px;
-            line-height: 1.9;
-        }
+.intro {
+    max-width: 360px;
+    margin: 22px auto 0;
+    color: #AAAAAA;
+    font-size: 13px;
+    line-height: 1.9;
+}
 
-        /* MAIN MESSAGE */
+/* BRAND MESSAGE */
 
-        .statement {
-            padding: 27px 12px;
-            margin-bottom: 38px;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            text-align: center;
-        }
+.statement {
+    padding: 27px 12px;
+    margin-bottom: 42px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
 
-        .statement h2 {
-            font-family: 'Manrope', sans-serif;
-            font-size: 25px;
-            line-height: 1.4;
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
+.statement h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 
-        .statement h2 span {
-            color: var(--gold);
-        }
+.statement h2 span {
+    color: var(--gold);
+}
 
-        .statement p {
-            color: var(--muted);
-            font-size: 9px;
-            letter-spacing: 2.5px;
-            margin-top: 13px;
-        }
+.statement p {
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    margin-top: 13px;
+}
 
-        /* SECTIONS */
+/* SECTIONS */
 
-        .section {
-            margin-bottom: 40px;
-        }
+.section {
+    margin-bottom: 43px;
+}
 
-        .section-heading {
-            margin-bottom: 17px;
-        }
+.section-number {
+    display: block;
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
 
-        .section-number {
-            display: block;
-            color: var(--gold);
-            font-size: 9px;
-            letter-spacing: 3px;
-            margin-bottom: 9px;
-        }
+.section-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
 
-        .section-heading h2 {
-            font-family: 'Manrope', sans-serif;
-            font-size: 21px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
+.section-description {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.9;
+    margin-top: 10px;
+}
 
-        .section-heading p {
-            color: var(--muted);
-            font-size: 12px;
-            line-height: 1.8;
-            margin-top: 8px;
-        }
+/* FEATURE */
 
-        /* FEATURE CARDS */
+.feature {
+    padding: 24px 20px;
+    margin-top: 20px;
+    background: linear-gradient(145deg, #191919, #111111);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    transition: border-color .25s ease;
+}
 
-        .feature {
-            padding: 23px 20px;
-            background: linear-gradient(145deg, #191919, #111111);
-            border: 1px solid var(--border);
-            border-radius: 5px;
-            margin-bottom: 12px;
-            transition: border-color .25s ease;
-        }
+.feature:hover {
+    border-color: var(--gold);
+}
 
-        .feature:hover {
-            border-color: var(--gold);
-        }
+.feature-label {
+    color: var(--gold);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 13px;
+}
 
-        .feature-label {
-            color: var(--gold);
-            font-size: 9px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            margin-bottom: 12px;
-        }
+.feature h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    margin-bottom: 11px;
+}
 
-        .feature h3 {
-            font-family: 'Manrope', sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
+.feature p {
+    color: #AAAAAA;
+    font-size: 12px;
+    line-height: 1.9;
+}
 
-        .feature p {
-            color: #AAAAAA;
-            font-size: 12px;
-            line-height: 1.8;
-        }
+.feature-list {
+    list-style: none;
+    margin-top: 17px;
+}
 
-        .feature-list {
-            list-style: none;
-            margin-top: 17px;
-        }
+.feature-list li {
+    padding: 10px 0;
+    color: #D0D0D0;
+    font-size: 11px;
+    border-top: 1px solid #292929;
+}
 
-        .feature-list li {
-            padding: 9px 0;
-            color: #D0D0D0;
-            font-size: 11px;
-            border-top: 1px solid #292929;
-        }
+.feature-list li::before {
+    content: "—";
+    color: var(--gold);
+    margin-right: 10px;
+}
 
-        .feature-list li::before {
-            content: "—";
-            color: var(--gold);
-            margin-right: 10px;
-        }
+/* BUTTONS */
 
-        /* BUTTONS */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 18px;
+}
 
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 18px;
-        }
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 57px;
+    padding: 17px 19px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    transition: all .25s ease;
+}
 
-        .button {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 56px;
-            padding: 16px 19px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 1.4px;
-            transition: all .25s ease;
-        }
+.button:hover {
+    background: var(--surface-light);
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}
 
-        .button:hover {
-            background: var(--surface-light);
-            border-color: var(--gold);
-            transform: translateY(-2px);
-        }
+.button .arrow {
+    color: var(--gold);
+    font-size: 18px;
+}
 
-        .button span:last-child {
-            color: var(--gold);
-            font-size: 18px;
-        }
+.primary {
+    background: var(--gold);
+    color: #101010;
+    border-color: var(--gold);
+}
 
-        .button-primary {
-            background: var(--gold);
-            color: #101010;
-            border-color: var(--gold);
-        }
+.primary .arrow {
+    color: #101010;
+}
 
-        .button-primary span:last-child {
-            color: #101010;
-        }
+.primary:hover {
+    background: var(--gold-light);
+    border-color: var(--gold-light);
+}
 
-        .button-primary:hover {
-            background: var(--gold-light);
-            border-color: var(--gold-light);
-        }
+/* BUSINESS */
 
-        /* SOCIAL */
+.business-feature {
+    border-color: rgba(197,164,109,0.35);
+}
 
-        .social {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-top: 14px;
-        }
+/* SOCIAL */
 
-        .social a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 49px;
-            background: #151515;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            font-size: 10px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            transition: all .2s ease;
-        }
+.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 18px;
+}
 
-        .social a:hover {
-            border-color: var(--gold);
-            color: var(--gold);
-        }
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 49px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all .2s ease;
+}
 
-        /* DIVIDER */
+.social a:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
 
-        .separator {
-            width: 35px;
-            height: 1px;
-            background: var(--gold);
-            margin: 35px auto;
-        }
+/* FOOTER */
 
-        /* FOOTER */
+.separator {
+    width: 35px;
+    height: 1px;
+    background: var(--gold);
+    margin: 38px auto;
+}
 
-        footer {
-            text-align: center;
-            padding: 15px 10px 10px;
-        }
+footer {
+    text-align: center;
+    padding: 10px 10px 20px;
+}
 
-        .footer-name {
-            font-family: 'Manrope', sans-serif;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 4px;
-        }
+.footer-name {
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
 
-        .footer-caption {
-            color: #666666;
-            font-size: 9px;
-            letter-spacing: 2px;
-            line-height: 2;
-            margin-top: 13px;
-        }
+.footer-caption {
+    color: #666666;
+    font-size: 9px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-top: 13px;
+}
 
-        .footer-motto {
-            color: var(--gold);
-            font-size: 9px;
-            letter-spacing: 3px;
-            margin-top: 18px;
-        }
+.footer-motto {
+    color: var(--gold);
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 18px;
+}
 
-        /* MOBILE */
+/* RESPONSIVE */
 
-        @media (max-width: 380px) {
-            .container {
-                padding: 28px 15px;
-            }
+@media (max-width: 380px) {
+    .container {
+        padding: 28px 15px;
+    }
 
-            .profile-image {
-                width: 120px;
-                height: 120px;
-            }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
 
-            .statement h2 {
-                font-size: 22px;
-            }
-        }
+    .statement h2 {
+        font-size: 22px;
+    }
+}
 
-        @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 
-            *, *::before, *::after {
-                transition: none !important;
-            }
-        }
-    </style>
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <main class="container">
 
-    <!-- BRAND -->
+    <!-- PERSONAL BRAND -->
 
     <header>
 
@@ -403,25 +397,26 @@
             <h1>SHAIEL TORRES</h1>
 
             <div class="profession">
-                PERSONAL TRAINER · ENTREPRENEUR
+                FITNESS · ENTREPRENEURSHIP
             </div>
 
             <p class="intro">
-                Transformación física, disciplina y desarrollo personal.
-                Construyendo personas, equipos y oportunidades.
+                Transformación física, mentalidad y desarrollo personal.
+                Construyendo una mejor versión de mí y ayudando
+                a otros a construir la suya.
             </p>
 
         </div>
 
     </header>
 
-    <!-- BRAND STATEMENT -->
+    <!-- STATEMENT -->
 
     <section class="statement">
 
         <h2>
-            BUILD YOUR<br>
-            <span>OWN LEGACY.</span>
+            BUILD A BETTER YOU.<br>
+            <span>BUILD YOUR FUTURE.</span>
         </h2>
 
         <p>DISCIPLINE · VISION · ACTION</p>
@@ -432,19 +427,19 @@
 
     <section class="section">
 
-        <div class="section-heading">
+        <span class="section-number">
+            01 / FITNESS & TRANSFORMATION
+        </span>
 
-            <span class="section-number">01 / FITNESS</span>
+        <h2 class="section-title">
+            Transformá tu físico.
+        </h2>
 
-            <h2>Transformá tu físico.</h2>
-
-            <p>
-                Ayudo a hombres y mujeres +30 a reducir grasa abdominal
-                y mejorar su composición corporal sin sacrificar
-                masa muscular.
-            </p>
-
-        </div>
+        <p class="section-description">
+            Ayudo a hombres y mujeres +30 a reducir grasa abdominal
+            y mejorar su composición corporal sin sacrificar
+            masa muscular.
+        </p>
 
         <div class="feature">
 
@@ -456,15 +451,15 @@
 
             <p>
                 Un enfoque personalizado para mejorar tus hábitos,
-                organizar tu alimentación y construir una transformación
-                física sostenible.
+                organizar tu alimentación y trabajar en una
+                transformación física sostenible.
             </p>
 
             <ul class="feature-list">
-                <li>Diagnóstico inicial y objetivos</li>
+                <li>Diagnóstico inicial</li>
                 <li>Plan personalizado</li>
                 <li>Nutrición y organización de hábitos</li>
-                <li>Seguimiento de tu evolución</li>
+                <li>Seguimiento de evolución</li>
             </ul>
 
         </div>
@@ -472,13 +467,13 @@
         <div class="buttons">
 
             <a
-                class="button button-primary"
-                href="https://wa.me/542995209750?text=Hola%20Shaiel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Reset%20Metab%C3%B3lico."
+                class="button primary"
+                href="https://wa.me/542995053620?text=Hola%20Shaiel%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Reset%20Metab%C3%B3lico."
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <span>QUIERO MI PLAN PERSONALIZADO</span>
-                <span>↗</span>
+                <span>QUIERO TRANSFORMAR MI FÍSICO</span>
+                <span class="arrow">↗</span>
             </a>
 
         </div>
@@ -491,39 +486,38 @@
 
     <section class="section">
 
-        <div class="section-heading">
+        <span class="section-number">
+            02 / BUSINESS & LEADERSHIP
+        </span>
 
-            <span class="section-number">02 / BUSINESS</span>
+        <h2 class="section-title">
+            Construí algo propio.
+        </h2>
 
-            <h2>Construí algo propio.</h2>
+        <p class="section-description">
+            ¿Te apasiona el mundo fitness, el bienestar y el crecimiento?
+            Convertí ese interés en una oportunidad para desarrollar
+            un negocio y construir una comunidad.
+        </p>
 
-            <p>
-                Desarrollo empresarial, liderazgo y construcción
-                de equipos. Creando oportunidades de crecimiento
-                junto a Omnilife + Seytú.
-            </p>
-
-        </div>
-
-        <div class="feature">
+        <div class="feature business-feature">
 
             <div class="feature-label">
-                BUSINESS & LEADERSHIP
+                FITNESS ENTREPRENEURSHIP
             </div>
 
-            <h3>OMNILIFE + SEYTÚ</h3>
+            <h3>GROW WITH US.</h3>
 
             <p>
-                Un espacio para conocer nuestros productos,
-                explorar oportunidades comerciales y desarrollar
-                un negocio con visión de crecimiento.
+                Desarrollo de equipos, liderazgo y oportunidades
+                comerciales junto a Omnilife.
             </p>
 
             <ul class="feature-list">
+                <li>Desarrollo personal y liderazgo</li>
                 <li>Bienestar y suplementación</li>
-                <li>Cuidado personal y belleza</li>
-                <li>Desarrollo comercial</li>
-                <li>Formación de equipos y liderazgo</li>
+                <li>Formación comercial</li>
+                <li>Construcción de equipos</li>
             </ul>
 
         </div>
@@ -531,23 +525,23 @@
         <div class="buttons">
 
             <a
-                class="button button-primary"
-                href="https://wa.me/542995209750?text=Hola%20Shaiel%2C%20quiero%20conocer%20la%20oportunidad%20de%20negocio."
+                class="button primary"
+                href="https://wa.me/542995053620?text=Hola%20Shaiel%2C%20quiero%20conocer%20la%20oportunidad%20de%20negocio."
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <span>CONOCER LA OPORTUNIDAD</span>
-                <span>↗</span>
+                <span>QUIERO CONOCER TU EQUIPO</span>
+                <span class="arrow">↗</span>
             </a>
 
             <a
                 class="button"
-                href="https://empresario.omnilife.com/ar/neuquen/centenario/2995209750/shaiel-torres-millaman/omnilife"
+                href="https://empresario.omnilife.com/ar/neuquen/centenario/2995399926/miriam-millaman-gonzales/omnilife"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <span>WEB OFICIAL DE COMPAÑÍA</span>
-                <span>↗</span>
+                <span>CONOCER OMNILIFE</span>
+                <span class="arrow">↗</span>
             </a>
 
         </div>
@@ -556,22 +550,22 @@
 
     <div class="separator"></div>
 
-    <!-- SOCIAL MEDIA -->
+    <!-- COMMUNITY -->
 
     <section class="section">
 
-        <div class="section-heading">
+        <span class="section-number">
+            03 / CONTENT & COMMUNITY
+        </span>
 
-            <span class="section-number">03 / COMMUNITY</span>
+        <h2 class="section-title">
+            Conectá conmigo.
+        </h2>
 
-            <h2>Conectá conmigo.</h2>
-
-            <p>
-                Contenido sobre entrenamiento, nutrición,
-                hábitos y desarrollo personal.
-            </p>
-
-        </div>
+        <p class="section-description">
+            Entrenamiento, nutrición, hábitos, mentalidad
+            y experiencias del mundo empresarial.
+        </p>
 
         <div class="social">
 
@@ -592,7 +586,7 @@
             </a>
 
             <a
-                href="https://www.facebook.com/share/1FVCGVKzPm/?mibextid=wwXIfr"
+                href="https://www.facebook.com/share/1NqcXrkXiR/"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -600,7 +594,7 @@
             </a>
 
             <a
-                href="tel:+542995209750"
+                href="tel:+542995053620"
             >
                 CONTACTO ↗
             </a>
@@ -611,12 +605,12 @@
 
             <a
                 class="button"
-                href="https://wa.me/542995209750"
+                href="https://wa.me/542995053620"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <span>WHATSAPP DIRECTO</span>
-                <span>↗</span>
+                <span class="arrow">↗</span>
             </a>
 
         </div>
